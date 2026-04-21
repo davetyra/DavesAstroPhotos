@@ -9,6 +9,7 @@ const PH = {
   emissionnebula:   { bg: '281e1e', tx: 'dcc4c4' },
   reflectionnebula: { bg: '1e2028', tx: 'c4c8dc' },
   comets:           { bg: '1e2820', tx: 'c4dcc8' },
+  starclusters:     { bg: '201e14', tx: 'dcd8c4' },
   widefield:        { bg: '202020', tx: 'd0d0d0' },
 };
 function thumb(cat, label) {
@@ -158,6 +159,33 @@ const GALLERIES = {
     { id:'c24', title:'PANSTARRS P1',         catalog:'C/2022 P1',  date:'2023-08-18', scope:'William Optics GT81 @ f/5.9', camera:'ZWO ASI2600MC',       exposure:'1 hr 50 min',   location:'Morro Bay, CA', url:'https://en.wikipedia.org/wiki/PanSTARRS' },
   ],
 
+  starclusters: [
+    { id:'sc01', title:'Hercules Cluster',      catalog:'M13',       date:'2024-06-15', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'3 hrs 30 min',  location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Messier_13' },
+    { id:'sc02', title:'Great Globular in Ser', catalog:'M5',        date:'2024-05-20', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'4 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Messier_5' },
+    { id:'sc03', title:'M3',                    catalog:'M3',        date:'2024-05-05', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'3 hrs 45 min',  location:'Cambria, CA', url:'https://en.wikipedia.org/wiki/Messier_3' },
+    { id:'sc04', title:'Pleiades',              catalog:'M45',       date:'2024-11-08', scope:'William Optics GT81 @ f/5.9', camera:'ZWO ASI2600MC',     exposure:'8 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Pleiades' },
+    { id:'sc05', title:'Beehive Cluster',       catalog:'M44',       date:'2024-03-25', scope:'William Optics GT81 @ f/5.9', camera:'ZWO ASI2600MC',     exposure:'5 hrs 30 min',  location:'Cambria, CA', url:'https://en.wikipedia.org/wiki/Beehive_Cluster' },
+    { id:'sc06', title:'Double Cluster',        catalog:'NGC 869/884',date:'2024-10-18',scope:'William Optics GT81 @ f/5.9', camera:'ZWO ASI2600MC',     exposure:'6 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Double_Cluster' },
+    { id:'sc07', title:'Wild Duck Cluster',     catalog:'M11',       date:'2024-08-10', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'4 hrs 15 min',  location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Wild_Duck_Cluster' },
+    { id:'sc08', title:'Omega Centauri',        catalog:'NGC 5139',  date:'2024-04-20', scope:'William Optics GT81 @ f/5.9', camera:'ZWO ASI2600MC',     exposure:'7 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Omega_Centauri' },
+    { id:'sc09', title:'47 Tucanae',            catalog:'NGC 104',   date:'2024-11-22', scope:'William Optics GT81 @ f/5.9', camera:'ZWO ASI2600MC',     exposure:'6 hrs 30 min',  location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/47_Tucanae' },
+    { id:'sc10', title:'Sagittarius Cluster',   catalog:'M22',       date:'2024-07-08', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'3 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Messier_22' },
+    { id:'sc11', title:'Pegasus Cluster',       catalog:'M15',       date:'2024-09-28', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'5 hrs 0 min',   location:'Cambria, CA', url:'https://en.wikipedia.org/wiki/Messier_15' },
+    { id:'sc12', title:'M92',                   catalog:'M92',       date:'2024-06-28', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'4 hrs 30 min',  location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Messier_92' },
+    { id:'sc13', title:'M2',                    catalog:'M2',        date:'2024-09-15', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'4 hrs 0 min',   location:'Paso Robles, CA', url:'https://en.wikipedia.org/wiki/Messier_2' },
+    { id:'sc14', title:'Butterfly Cluster',     catalog:'M6',        date:'2024-07-22', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MC',     exposure:'3 hrs 15 min',  location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Butterfly_Cluster' },
+    { id:'sc15', title:'Ptolemy Cluster',       catalog:'M7',        date:'2024-07-28', scope:'William Optics GT81 @ f/5.9', camera:'ZWO ASI2600MC',     exposure:'4 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Ptolemy_Cluster' },
+    { id:'sc16', title:'Owl Cluster',           catalog:'NGC 457',   date:'2024-10-08', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'5 hrs 30 min',  location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/NGC_457' },
+    { id:'sc17', title:'M35',                   catalog:'M35',       date:'2024-12-18', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MC',     exposure:'4 hrs 45 min',  location:'Cambria, CA', url:'https://en.wikipedia.org/wiki/Messier_35' },
+    { id:'sc18', title:'M41',                   catalog:'M41',       date:'2025-01-08', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MC',     exposure:'3 hrs 30 min',  location:'Cambria, CA', url:'https://en.wikipedia.org/wiki/Messier_41' },
+    { id:'sc19', title:'Old Open Cluster',      catalog:'M67',       date:'2024-03-12', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'6 hrs 0 min',   location:'Cambria, CA', url:'https://en.wikipedia.org/wiki/Messier_67' },
+    { id:'sc20', title:'Christmas Tree Cluster',catalog:'NGC 2264',  date:'2024-12-08', scope:'William Optics GT81 @ f/5.9', camera:'ZWO ASI2600MC',     exposure:'5 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Christmas_Tree_Cluster' },
+    { id:'sc21', title:'M36',                   catalog:'M36',       date:'2024-12-22', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MC',     exposure:'3 hrs 30 min',  location:'Cambria, CA', url:'https://en.wikipedia.org/wiki/Messier_36' },
+    { id:'sc22', title:'M37',                   catalog:'M37',       date:'2024-12-25', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MC',     exposure:'4 hrs 0 min',   location:'Cambria, CA', url:'https://en.wikipedia.org/wiki/Messier_37' },
+    { id:'sc23', title:'M4',                    catalog:'M4',        date:'2024-06-05', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'3 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Messier_4' },
+    { id:'sc24', title:'M10',                   catalog:'M10',       date:'2024-06-18', scope:'Celestron EdgeHD 11" @ f/7',  camera:'ZWO ASI2600MM Pro', exposure:'3 hrs 45 min',  location:'Paso Robles, CA', url:'https://en.wikipedia.org/wiki/Messier_10' },
+  ],
+
   widefield: [
     { id:'w01', title:'Milky Way Core',          catalog:'Sagittarius',      date:'2024-06-15', scope:'Sony a7IV + 24mm GM',  camera:'Sony a7IV (H-α mod)', exposure:'2 hrs 30 min',  location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Galactic_Center' },
     { id:'w02', title:'Rho Ophiuchi Complex',     catalog:'Rho Oph',          date:'2024-06-22', scope:'Sony a7IV + 24mm GM',  camera:'Sony a7IV (H-α mod)', exposure:'3 hrs 0 min',   location:'Carrizo Plain NM, CA', url:'https://en.wikipedia.org/wiki/Rho_Ophiuchi_cloud_complex' },
@@ -186,11 +214,13 @@ const GALLERIES = {
   ],
 };
 
-/* Attach thumbnail/full URLs */
+/* Attach WebP paths + placehold.co fallbacks */
 Object.keys(GALLERIES).forEach(cat => {
   GALLERIES[cat].forEach(img => {
-    img.thumb = thumb(cat, img.catalog);
-    img.full  = full(cat, img.catalog);
+    img.thumb         = `images/thumbs/${img.id}.webp`;
+    img.full          = `images/full/${img.id}.webp`;
+    img.thumbFallback = thumb(cat, img.catalog);
+    img.fullFallback  = full(cat, img.catalog);
   });
 });
 
@@ -226,6 +256,7 @@ function renderGallery() {
       <button class="gal-btn" data-index="${start + idx}" data-category="${cat}"
               aria-label="View ${img.title}">
         <img class="gal-img" src="${img.thumb}"
+             onerror="this.onerror=null;this.src='${img.thumbFallback}'"
              alt="${img.title}" loading="lazy">
         <div class="gal-footer">
           <span class="gal-catalog">${img.catalog}</span>
@@ -322,7 +353,9 @@ function lbUpdate() {
   const items = GALLERIES[_lbCat] || [];
   const item  = items[_lbIndex];
   if (!item) return;
-  document.getElementById('lb-img').src     = item.full;
+  const lbImg = document.getElementById('lb-img');
+  lbImg.src = item.full;
+  lbImg.onerror = () => { lbImg.onerror = null; lbImg.src = item.fullFallback; };
   document.getElementById('lb-img').alt     = item.title;
   document.getElementById('lb-catalog').textContent = item.catalog;
   document.getElementById('lb-title').textContent   = item.title;
@@ -409,6 +442,7 @@ function setActiveNav() {
       (nav === 'emissionnebula'    && file === 'gallery-emissionnebula.html') ||
       (nav === 'reflectionnebula'  && file === 'gallery-reflectionnebula.html') ||
       (nav === 'comets'            && file === 'gallery-comets.html') ||
+      (nav === 'starclusters'       && file === 'gallery-starclusters.html') ||
       (nav === 'widefield'         && file === 'gallery-widefield.html') ||
       (nav === 'about'             && file === 'about.html') ||
       (nav === 'contact'           && file === 'contact.html');
